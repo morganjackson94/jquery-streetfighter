@@ -24,12 +24,34 @@ $(document).ready(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
 		$('.hadouken').hide();
-		//ryu goes back to his ready position
 	});
 });
+
+$(document).keydown(function(x){
+	playWorst();
+	if (x.keyCode == 88) {
+		console.log('test')
+		$('.ryu-still').hide();
+		$('.ryu-ready').hide();
+		$('.ryu-throwing').hide();
+		$('.ryu-cool').show();
+	}
+}).keyup(function(x){
+	if (x.keyCode == 88) {
+		$('.ryu-cool').hide();
+		$('.ryu-still').show();
+	}
+});
+
 
 function playHadouken () {
 	$('#hadouken-sound')[0].volume = 0.5;
 	$('#hadouken-sound')[0].load();
 	$('#hadouken-sound')[0].play();
+}
+
+function playWorst () {
+	$('#worst')[0].volume = 0.5;
+	$('#worst')[0].load();
+	$('#worst')[0].play();
 }
