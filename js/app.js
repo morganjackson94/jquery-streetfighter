@@ -37,8 +37,11 @@ $(document).keydown(function(x){
 		$('.ryu-cool').show();
 	}
 }).keyup(function(x){
+	stopWorst();
 	if (x.keyCode == 88) {
 		$('.ryu-cool').hide();
+		$('.ryu-ready').hide();
+		$('.ryu-throwing').hide();
 		$('.ryu-still').show();
 	}
 });
