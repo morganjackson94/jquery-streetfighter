@@ -58,3 +58,10 @@ function playWorst () {
 	$('#worst')[0].load();
 	$('#worst')[0].play();
 }
+
+function stopWorst () {
+	$('#worst')[0].volume = 0;
+	$('#worst')[0].load();
+	$('#worst')[0].play();
+}
+

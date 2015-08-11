@@ -7,9 +7,10 @@ body {
 }
 
 .main{
-	background-color: #fff;
+	background: url('http://i.imgur.com/GFaoSEU.gif');
+	background-position: 0px -200px;
 	margin-top: 110px;
-	padding-left: 100px;
+	padding-left: 75px;
 	min-width: 1200px;
 	height: 500px;
 	position: relative;
@@ -61,10 +62,24 @@ body {
 	left: 650px;
 	float: left;
 	position: absolute;
-	z-index: 10;
+	z-index: 1000;
 }
 
 .hadouken, .ryu-ready, .ryu-still, .ryu-throwing {
 	background-repeat: no-repeat;
 }
 
+.logo {
+	position: absolute;
+	top: 50px;
+	left: 550px;
+}
+
+.help {
+	font-family: 'Helvetica';
+	color: yellow;
+	font-weight: 600;
+	position: absolute;
+	top: 300px;
+	left: 550px;
+}
